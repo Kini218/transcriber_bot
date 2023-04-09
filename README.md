@@ -1,4 +1,4 @@
-# Transcriber Bot: Telegram Text-to-Speech and Speech-to-Text Bot
+# Transcriber Bot
 
 "Transcriber Bot" is a Telegram bot written in Python that can perform Text-to-Speech (TTS) and Speech-to-Text (STT) conversions. The bot uses the `text_to_speech` and `speech_to_text` modules for the conversion and `telebot` library for communication with Telegram API. The `langdetect` module is used to detect the language of the input text.
 
