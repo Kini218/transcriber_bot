@@ -6,6 +6,14 @@ The Transcriber Bot can be used by sending a text message to perform TTS convers
 
 This Transcriber Bot can be useful for people who need to convert text to speech or vice versa, such as for language learners or people with speech or hearing disabilities.
 
+## Cloning the Repository
+
+To clone this repository to your local machine, navigate to the directory where you want to store the repository and run the following command:
+
+```python
+git clone https://github.com/Kini218/transcriber_bot.git
+```
+
 ## Installation
 
 To use this Transcriber Bot, you need to have Python 3 installed on your machine. You also need to install the required packages using the following command:
@@ -14,19 +22,17 @@ To use this Transcriber Bot, you need to have Python 3 installed on your machine
 pip install -r requirements.txt
 ```
 
-
 After installing the required packages, you need to create a bot on Telegram and obtain an API token. You can follow the instructions [here](https://core.telegram.org/bots#creating-a-new-bot) to create a bot and obtain an API token.
 
 Once you have the API token, you can replace the `BOT-API` placeholder in the code with your API token.
 
 ## Usage
 
-To use the Transcriber Bot, simply run the `bot.py` script using the following command:
+To use the Transcriber Bot, simply run the `transcriber_bot.py` script using the following command:
 
 ```python
-transcriber_bot.py
+code/transcriber_bot.py
 ```
-
 
 The bot will start listening for incoming messages from the Telegram API. You can then use the bot by sending a text message to perform TTS conversion or by sending an audio message to perform STT conversion. You can also use the `/help` command to see all available commands.
 
