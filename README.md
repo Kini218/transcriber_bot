@@ -19,6 +19,7 @@ git clone https://github.com/Kini218/transcriber_bot.git
 To use this Transcriber Bot, you need to have Python 3 installed on your machine. You also need to install the required packages using the following command:
 
 ```python
+cd transcriber_bot
 pip install -r requirements.txt
 ```
 
@@ -31,7 +32,7 @@ Once you have the API token, you can replace the `BOT-API` placeholder in the co
 To use the Transcriber Bot, simply run the `transcriber_bot.py` script using the following command:
 
 ```python
-code/transcriber_bot.py
+python code/transcriber_bot.py
 ```
 
 The bot will start listening for incoming messages from the Telegram API. You can then use the bot by sending a text message to perform TTS conversion or by sending an audio message to perform STT conversion. You can also use the `/help` command to see all available commands.
