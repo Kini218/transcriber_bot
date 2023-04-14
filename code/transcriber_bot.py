@@ -3,7 +3,7 @@ from speech_to_text import transcribe_audio_file
 import telebot
 from langdetect import detect
 
-bot = telebot.TeleBot('5996995138:AAE0X-yBiMS4OusZ83VkFl4iPNVwdOobAN4')
+bot = telebot.TeleBot('BOT-API')
 
 
 def start_text():
