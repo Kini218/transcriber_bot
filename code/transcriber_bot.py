@@ -3,11 +3,15 @@ from speech_to_text import transcribe_audio_file
 import telebot
 from langdetect import detect
 
-bot = telebot.TeleBot("BOT-API")
+bot = telebot.TeleBot('5996995138:AAE0X-yBiMS4OusZ83VkFl4iPNVwdOobAN4')
 
 
 def start_text():
-    return 'Welcome to our Text-to-Speech and Speech-to-Text Bot! This bot can convert text to speech and speech to text. To convert text to speech, just send a message with the text you want to convert. To convert speech to text, send an audio message or a voice note. Use the command /help to see all available commands.'
+    return 'Welcome to our Text-to-Speech and Speech-to-Text Bot! This bot can convert text to speech and speech to text. To convert text to speech, just send a message with the text you want to convert. To convert speech to text, send an audio message or a voice note. Use the command /help if you forget something.'
+
+
+def help_messsage():
+    return 'Just send text message to convert it in audio file or record a voice message to convert it in text.'
 
 
 def create_languages_keyboard():
@@ -61,9 +65,14 @@ def handle_language_selection(callback_query):
     bot.send_message(callback_query.message.chat.id, text)
 
 
-@bot.message_handler(commands=['start', 'help'])
+@bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, start_text())
+
+
+@bot.message_handler(commands=['help'])
+def send_welcome(message):
+    bot.reply_to(message, help_messsage())
 
 
 @bot.message_handler(func=lambda message: message.text)
