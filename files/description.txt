@@ -1,1 +1,2 @@
-It's important not to delete this folder as it contains voice files.
+Don't delete this folder, because it will contain voice files
+
